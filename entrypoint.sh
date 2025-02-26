@@ -5,4 +5,7 @@ set -e
 source /opt/ros/$ROS_DISTRO/setup.bash
 source /home/cev/install/setup.bash
 
-exec ros2 launch autonomy $1.py
+# Fill your entrypoint script here
+
+# Example:
+# exec ros2 launch autonomy $1.py

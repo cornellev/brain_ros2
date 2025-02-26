@@ -3,7 +3,7 @@ FROM ros:humble
 
 SHELL ["/bin/bash", "-c"]
 
-ARG FOLDER_NAME=rc-brain
+ARG FOLDER_NAME=brain_ros2
 ARG WORKSPACE_DIR=/home/cev
 WORKDIR $WORKSPACE_DIR
 

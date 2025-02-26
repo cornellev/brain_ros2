@@ -3,8 +3,8 @@
     "build": {
         "dockerfile": "Dockerfile.dev"
     },
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/cev/src/rc-brain,type=bind",
-    "workspaceFolder": "/home/cev/src/rc-brain",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/cev/src/brain_ros2,type=bind",
+    "workspaceFolder": "/home/cev/src/brain_ros2",
     "runArgs": [
         "--rm",
         "--network=host",

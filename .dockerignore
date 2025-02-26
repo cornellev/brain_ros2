@@ -3,5 +3,3 @@
 .gitignore
 deploy.sh
 Dockerfile.*
-make_package.sh
-README.md

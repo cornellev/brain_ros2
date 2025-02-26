@@ -4,7 +4,7 @@ FROM ros:humble
 SHELL ["/bin/bash", "-c"]
 
 # Arguments
-ARG FOLDER_NAME=rc-brain
+ARG FOLDER_NAME=brain_ros2
 ARG WORKSPACE_DIR=/home/cev
 
 # Set working directory
@@ -24,8 +24,8 @@ RUN apt-get update && apt-get install -y \
 # Install clang-format
 RUN curl -fsSL https://apt.llvm.org/llvm-snapshot.gpg.key | tee /etc/apt/trusted.gpg.d/apt.llvm.org.asc && \
     echo $'deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy main\n' \
-         $'deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-18 main\n' \
-         $'deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-19 main\n' \
+    $'deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-18 main\n' \
+    $'deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-19 main\n' \
     | tee -a /etc/apt/sources.list && \
     apt-get update && apt-get install -y clang-format clang-format-19 \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
