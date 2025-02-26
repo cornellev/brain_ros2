@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>autonomy</name>
+  <name>brain</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="sidharthmrao@gmail.com">root</maintainer>
@@ -14,22 +14,6 @@
 
   <!--INTERNAL-->
   <depend>cev_msgs</depend>
-  <depend>encoder_odometry</depend>
-  <depend>hardware</depend>
-  <depend>serial_com</depend>
-  <depend>teleop</depend>
-  <depend>autobrake</depend>
-  <depend>trajectory_follower</depend>
-
-  <!--EXTERNAL-->
-  <depend>sllidar_ros2</depend>
-  <depend>witmotion_ros</depend>
-  <depend>robot_localization</depend>
-  <depend>joy</depend>
-  <depend>tf2_ros</depend>
-  <depend>slam_toolbox</depend>
-
-  <depend>cev_localization</depend>
 
   <export>
     <build_type>ament_cmake</build_type>

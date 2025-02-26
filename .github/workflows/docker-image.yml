@@ -20,4 +20,4 @@ jobs:
           fetch-depth: 0
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        run: docker build . --file Dockerfile --tag cev-brain-ros2:$(date +%s)
